@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Start Wars API</title>
+    </head>
+    <body>
+        <section id="page">
+            <h1>Consumiendo la API de Start Wars</h1>
+            <hr />
+            <form id="form">
+                <p>¿Qué datos deseas obtener?</p>
+                <select name="resources" id="resources">
+                    <option value="planets">Planetas</option>
+                    <option value="starships">Naves Espaciales</option>
+                    <option value="vehicles">Vehículos</option>
+                    <option value="people">Personas</option>
+                    <option value="films" selected>Películas</option>
+                    <option value="species">Especies</option>
+                </select>
+                <input
+                    type="submit"
+                    value="Solicitar"
+                    style="cursor: pointer"
+                />
+            </form>
+            <br />
+        </section>
+
+        <!-- Usando Fetch -->
+        <script src="script-fetch.js"></script>
+
+        <!-- Usando Axios -->
+        <!-- <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="script-axios.js"></script> -->
+    </body>
+</html>
